@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+    - apt-get update
+    - apt-get install -y python3 python3-pip
+    - npm install -g serverless@1.38.0
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+    - echo Build started on `date`
+    - bash ./deploy_pipelines ${STAGE}
+  post_build:
+    commands:
+      - echo Build completed on `date`
