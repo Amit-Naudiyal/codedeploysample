@@ -105,7 +105,7 @@ resources:
     GitHubSecret:
       Description: GitHub token
       Type: String
-      Default: 8fdaee22eadddeb58c9ff028d5b776fbb3b6ed5d
+      Default: 63fb634ce0c6c302e194170eeb743490bad782f9
   Resources:
     PipelineWebhook:
       Type: AWS::CodePipeline::Webhook
