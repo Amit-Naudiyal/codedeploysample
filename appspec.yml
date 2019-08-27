@@ -7,3 +7,6 @@ hooks:
   BeforeInstall:
     - location: .\Install.ps1
       timeout: 900
+  AfterInstall:
+    - location: .\AfterInstall.ps1
+      timeout: 180
